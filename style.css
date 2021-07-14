@@ -30,6 +30,11 @@
 }
 .banner img {
   width: 100%;
+  transition: all ease 0.8s;
+}
+.banner img:hover {
+  transform: scale(1.05);
+  transition: all ease 0.8s;
 }
 button {
   background-color: #e02c6d;
@@ -68,9 +73,17 @@ article {
   width: 330px;
   box-shadow: -2px 2px 15px rgb(225 221 221 / 87%);
 }
+.name {
+  overflow: hidden;
+}
 .name img {
   width: 100%;
   padding: 15px 15px 0px 15px;
+  transition: all ease 0.8s;
+}
+.players:hover .name img {
+  transform: scale(1.05);
+  transition: all ease 0.8s;
 }
 .text {
   margin: 0px 15px 33px 15px;
@@ -306,7 +319,7 @@ article {
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .bannerses,
   .copas {
     flex-direction: column;
